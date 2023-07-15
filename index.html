@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="app">
+    <h1 class="mb-3">Warranty Tracker</h1>
+    <p>How to use Warranty Tracker System
+        <ol>
+            <li>If it has been determined that a warranty return is the only reasonable next step of escalation, send the customer a return label to their preffered email (if this is different than the one we have on file, update it).</li>
+            <li>Click "Add New Warranty Claim" below, and begin to fill out the form. Enter the customer name as it appears in our records. Get a brief explanation of the issues the customer is experiencing, and also get the desired return address to send the product back to once the warranty process is concluded.</li>
+            <li>Make sure to leave your initials at the end of the description in this manner:" --JGC-- ". Add the warranty claim to the board. All done!</li>
+        </ol>
+    </p>
+    <hr>
+
+    <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+      <span>Add New Warranty Claim</span>
+      <i class="fas fa-plus"></i>
+    </div>
+
+    <!-- Modal -->
+    <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New Warranty Claim</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Customer Name</p>
+            <input type="text" class="form-control" name="" id="textInput">
+            <div id="msg"></div>
+            <br>
+            <p>Date the Warrranty was Initiated (MM-DD)</p>
+            <input type="datetime" class="form-control" name="" id="dateInput">
+            <br>
+            <p>Brief Description of Issues and Desired Return Address (if different than home address on file)</p>
+            <textarea name="" class="form-control" id="textarea" cols="30" rows="5"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" id="add" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <h5 class="text-center my-3">Current Warranty Claims</h5>
+
+    <div id="tasks">
+
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
