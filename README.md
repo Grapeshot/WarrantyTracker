@@ -1,2 +1,2 @@
 # WarrantyTrackerProject
-Warranty Tracker Project was a very simple project I set out to accomplish over a weekend. My workplace needed a better way to keep track of our warranty claims that didn't include writing them on a white board, so I used my very basic knowledge of HTML and CSS to build this very rough template. I then worked my way through a Javascript course and pulled things I needed to use to build out this project.
+Warranty Tracker Project was a project I set out to accomplish as a way to learn and to help the company I'm interning for. My workplace needed a better way to keep track of our warranty claims that didn't include writing them on a white board, so I used my knowledge of HTML, CSS and Javascript to build this template.
